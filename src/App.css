@@ -21,13 +21,17 @@
 
 table {
   width: 100%;
+  height: 50%;
 }
 td, th {
   border: 1px solid gray;
   padding: 10px;
- 
 }
 
 thead {
   background-color: '#f4e04d' 
+}
+
+tbody{
+  height: 30% !important;
 }
