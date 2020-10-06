@@ -7,7 +7,10 @@ This is a very basic codebase using React.js and also a beginner can understand 
 
 ReactJS <br/>
 Functional Components<br/>
-ES6
+ES6 <br/>
+Java Script <br/>
+HTML<br/>
+CSS
 
 
 
