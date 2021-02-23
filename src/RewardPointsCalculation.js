@@ -4,9 +4,9 @@ import { transactionData } from "./data";
 
 
 export const RewardPointsCalculation = () => {
-    const getRewardPoints = (amountSpent) => {
+    const getRewardPoints = (transaction_Amount) => {
         let points = 0;
-        let rewardAmount = Number(amountSpent.toString().replace(/[$ ]/, ''));
+        let rewardAmount = Number(transaction_Amount.toString().replace(/[$ ]/, ''));
         if (rewardAmount >= 50) {
             rewardAmount = rewardAmount - 50;
             if (rewardAmount > 50) {
@@ -40,10 +40,10 @@ export const RewardPointsCalculation = () => {
                             transactionData.map((item, index) => (
                                 <tr key={index}>
                                     {/* <td>{item.customerID}</td> */}
-                                    <td>{item.name}</td>
-                                    <td>{item.transactionDt}</td>
-                                    <td>{item.amountSpent}</td>
-                                    <td>{getRewardPoints(item.amountSpent)}</td>
+                                    <td>{item.customer_Name}</td>
+                                    <td>{item.transaction_Dt}</td>
+                                    <td>{item.transaction_Amount}</td>
+                                    <td>{getRewardPoints(item.transaction_Amount)}</td>
                                 </tr>
                             ))
                         }
